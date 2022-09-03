@@ -18,7 +18,7 @@ a {
 
 .nav-wrapper {
     margin: auto;
-    text-align: center;
+    text-align: right;
     width: 70%;
 }
 
@@ -43,35 +43,8 @@ a {
     text-transform: uppercase;
 }
 
-.navbar ul {
-    display: inline-block;
-    float: right;
-    list-style: none;
-    margin-top: -2px;
-    text-align: right;
-    transition: transform 0.5s ease-out;
-    -webkit-transition: transform 0.5s ease-out;
-}
-
-@media(max-width: 640px) {
-    #navbar ul {
-        display: none;
-    }
-}
-
-@media(orientation: landscape) {
-    #navbar ul {
-        display: inline-block;
-    }
-}
-
-.navbar li {
-    display: inline-block;
-}
-
-.navbar li a {
+a {
     color: rgb(13, 26, 38);
-    display: block;
     font-size: 0.7em;
     height: 50px;
     letter-spacing: 1px;

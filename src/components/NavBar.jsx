@@ -8,10 +8,10 @@ function NavBar() {
               <div className="logo">
                   <a href="/"><i className="fa fa-angellist"></i>WEBB21</a>
               </div>
-              <ul id="menu">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/about">About</a></li>
-              </ul>
+              <div id="menu">
+                  <a href="/">Home</a>
+                  <a href="/about">About</a>
+              </div>
           </div>
       </div>
   )
