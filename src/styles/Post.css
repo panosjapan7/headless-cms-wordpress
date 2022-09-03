@@ -7,6 +7,26 @@
 .single-post {
     text-align: center;
 }
+ul {
+    /* padding-left:30em; */
+    /* list-style: none; */
+
+}
+li {
+    /* padding-left:-30em; */
+    /* list-style: none; */
+    list-style-type:none;
+    position: relative;
+
+}
+li:before {
+    content: "•";
+    position: absolute;
+    line-height: 0;
+    left: 33em;
+    top: 50%;
+    bottom: 50%;
+}
 
 img {
     max-width: 700px;
