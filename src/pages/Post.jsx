@@ -7,6 +7,8 @@ function Post() {
   const { id } = useParams();
   const [post, setPost] = useState([]);
 
+  console.log(`${process.env.REACT_APP_API_URL}/posts/${id}`)
+
   const fetchData = async () => {
     const response = await fetch(`${process.env.REACT_APP_API_URL}/posts/${id}`);
     const data = await response.json();
@@ -20,10 +22,10 @@ function Post() {
 
   return (
     <div className="post">
-      <p className="single-post">Post id: {post.id ? post.id : `  ${id} doesnt exist`}</p>
+      <p className="single-post">Post id: {post.ID ? post.ID : `  ${id} doesnt exist`}</p>
 
-      {post.title && <h1 className="single-post">{parse(post.title.rendered)}</h1>}
-      {post.content && <div className="single-post">{parse(post.content.rendered)}</div>}
+      {post.title && <h1 className="single-post">{parse(post.title)}</h1>}
+      {post.content && <div className="single-post">{parse(post.content)}</div>}
     </div>
   );
 }

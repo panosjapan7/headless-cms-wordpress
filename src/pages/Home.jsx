@@ -9,7 +9,7 @@ function Home() {
   const fetchData = async () => {
     const response = await fetch(`${process.env.REACT_APP_API_URL}/posts`)
     const data = await response.json();
-    setPosts(data);
+    setPosts(data.posts);
     console.log(data)
   }
 
@@ -22,9 +22,9 @@ function Home() {
             {posts &&
                 posts.map((post) => {
                     return (
-                        <div className="post" key={post.id}>
-                            <h1 className="post-title">{post.title.rendered}</h1>
-                            <Link to={`/posts/${post.id}`}>
+                        <div className="post" key={post.ID}>
+                            <h1 className="post-title">{post.title}</h1>
+                            <Link to={`/posts/${post.ID}`}>
                                 <p className="read-more">Read more..</p>
                             </Link>
                             <hr></hr>
