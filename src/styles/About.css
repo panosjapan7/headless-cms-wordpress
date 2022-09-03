@@ -23,6 +23,10 @@
 
             display: flex;
             flex-direction: column;
+            align-content: center;
+            align-items: center;
+
+            text-align: center;
             
             border-radius: 20px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -31,6 +35,8 @@
                 margin: 0;
                 margin-top: 30px;
                 margin-bottom: 20px;
+                max-width: 300px;
+                
             }
             .team-items {
                 margin: 0;

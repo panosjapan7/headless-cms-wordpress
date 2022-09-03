@@ -8,11 +8,8 @@ function About() {
         
         <div className="team-stack-container">
             <div className="team-container">
-                <h2>Team</h2>
-                <p className='team-items'>Anna</p>
-                <p className='team-items'>Jesper</p>
-                <p className='team-items'>Miran</p>
-                <p className='team-items'>Panos</p>
+                <h2>Headless CMS with WordPress & React</h2>
+                <p className='team-items'>Panos Tsapanidis</p>
             </div>
             <div className="stack-container">
                 <h2>Stack</h2>
