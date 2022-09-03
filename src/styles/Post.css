@@ -1,5 +1,7 @@
 .post {
     margin: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .single-post {

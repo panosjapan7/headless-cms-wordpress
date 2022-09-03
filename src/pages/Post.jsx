@@ -25,7 +25,7 @@ function Post() {
       <p className="single-post">Post id: {post.ID ? post.ID : `  ${id} doesnt exist`}</p>
 
       {post.title && <h1 className="single-post">{parse(post.title)}</h1>}
-      <img src={post.featured_image} alt="" />
+      <img className="featured-image" src={post.featured_image} alt="" />
       {post.content && <div className="single-post">{parse(post.content)}</div>}
     </div>
   );
