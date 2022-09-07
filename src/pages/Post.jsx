@@ -8,8 +8,6 @@ function Post() {
   const [post, setPost] = useState([]);
   const [postCategory, setPostCategory] = useState([]);
 
-  console.log(`${process.env.REACT_APP_API_URL}/posts/${id}`);
-
   const fetchData = async () => {
     const response = await fetch(
       `${process.env.REACT_APP_API_URL}/posts/${id}`
@@ -17,9 +15,9 @@ function Post() {
     const data = await response.json();
     setPost(data);
 
+    // Saves the object that contains the category data into a var
     let obj = data.categories;
     setPostCategory(Object.keys(obj)[0]);
-    console.log(Object.keys(obj)[0]);
   };
 
   useEffect(() => {
@@ -36,6 +34,10 @@ function Post() {
         <p className="single-post">
           Post Category:{" "}
           {postCategory ? postCategory : `  ${postCategory} doesnt exist`}
+        </p>
+        <p className="single-post">
+          Post Date:{" "}
+          {post.date ? post.date.split("T")[0] : `  ${post.date} doesnt exist`}
         </p>
       </div>
 
