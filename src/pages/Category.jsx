@@ -22,13 +22,13 @@ const Category = () => {
 
   return (
     <div>
-      <p>Category:{category}</p>
+      <p className="category-name">{category}</p>
       <div className="posts-list">
         {posts &&
           posts.map((post, index) => {
             return (
               <Link to={`/posts/${post.ID}`} key={index}>
-                <p>{post.title}</p>
+                <p className="post-title">{post.title}</p>
               </Link>
             );
           })}
