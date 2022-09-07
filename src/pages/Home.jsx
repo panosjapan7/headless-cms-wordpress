@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <div className="home">
-      <p className="recent-posts">Recent Posts</p>
+      <p className="recent-posts">All Posts</p>
       {posts &&
         posts.map((post) => {
           return (
