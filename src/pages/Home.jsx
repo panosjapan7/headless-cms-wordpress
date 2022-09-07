@@ -18,15 +18,15 @@ function Home() {
 
   return (
     <div className="home">
+      <p className="recent-posts">Recent Posts</p>
       {posts &&
         posts.map((post) => {
           return (
-            <div className="post" key={post.ID}>
-              <h1 className="post-title">{post.title}</h1>
+            <div className="post-container" key={post.ID}>
+              <h1 className="post-title-home">{post.title}</h1>
               <Link to={`/posts/${post.ID}`}>
                 <p className="read-more">Read more..</p>
               </Link>
-              <hr></hr>
             </div>
           );
         })}
