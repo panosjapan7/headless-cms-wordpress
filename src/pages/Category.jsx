@@ -12,7 +12,6 @@ const Category = () => {
     );
     const data = await response.json();
     setPosts(data.posts);
-    console.log("setPosts: ", data.posts);
   };
 
   useEffect(() => {
