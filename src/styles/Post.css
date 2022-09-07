@@ -4,6 +4,19 @@
   flex-direction: column;
   align-items: center;
 }
+.post-id-category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: rgb(13, 26, 38);
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
 
 .single-post {
   text-align: center;
