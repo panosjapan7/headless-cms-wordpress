@@ -20,8 +20,6 @@ function Post() {
     let obj = data.categories;
     setPostCategory(Object.keys(obj)[0]);
     console.log(Object.keys(obj)[0]);
-
-    // console.log("Post.jsx data.categories: ", data.categories.values(obj[0]));
   };
 
   useEffect(() => {
