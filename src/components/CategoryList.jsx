@@ -9,7 +9,6 @@ const CategoryList = () => {
     const response = await fetch(`${process.env.REACT_APP_API_URL}/categories`);
     const data = await response.json();
     setCategoryList(data.categories);
-    console.log("categoryList:", data.categories);
   };
 
   useEffect(() => {
