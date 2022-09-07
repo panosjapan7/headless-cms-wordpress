@@ -21,7 +21,7 @@ const Category = () => {
   }, [category]);
 
   return (
-    <div>
+    <div className="category-page-wrapper">
       <p className="category-name">{category}</p>
       <div className="posts-list">
         {posts &&

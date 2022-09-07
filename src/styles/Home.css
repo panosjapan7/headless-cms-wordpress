@@ -1,6 +1,9 @@
 .home {
-  justify-content: center;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .recent-posts {
@@ -18,7 +21,6 @@
 .post-container {
   margin: 0;
   margin-bottom: 50px;
-  align-items: center;
 }
 
 .post-title-home {
