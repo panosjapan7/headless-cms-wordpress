@@ -24,6 +24,7 @@ function Home() {
           return (
             <div className="post-container" key={post.ID}>
               <h1 className="post-title-home">{post.title}</h1>
+              <p className="post-date">{post.date.split("T")[0]}</p>
               <Link to={`/posts/${post.ID}`}>
                 <p className="read-more">Read more..</p>
               </Link>
