@@ -9,7 +9,7 @@ function About() {
       <div className="team-stack-container">
         <div className="team-container">
           <h2 className="h2-title">Headless CMS with WordPress.com & React</h2>
-          <p className="team-items">By Panos Tsapanidis</p>
+          <p className="team-items">Made By: Panos Tsapanidis</p>
           <a
             href="https://github.com/panosjapan7/headless-cms-wordpress"
             target={"_blank"}
