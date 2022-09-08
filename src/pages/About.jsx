@@ -10,6 +10,14 @@ function About() {
         <div className="team-container">
           <h2 className="h2-title">Headless CMS with WordPress.com & React</h2>
           <p className="team-items">Panos Tsapanidis</p>
+          <a
+            href="https://github.com/panosjapan7/headless-cms-wordpress"
+            target={"_blank"}
+            className="link"
+            rel="noreferrer"
+          >
+            GitHub Repository
+          </a>
         </div>
         <div className="stack-container">
           <h2 className="h2-title">Stack</h2>
